@@ -1,487 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dhruv Kanojia | Xonshiz</title>
+<link href="CSS/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="CSS/responsive_main.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type='text/javascript'>
+$(document).ready(function(){ 
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+<style type="text/css">
+body {
+	background-image: url(Images/bg.PNG);
+}
+</style>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Xonshiz | Github</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="CSS/respond.min.js"></script>
 </head>
+<body link="#000" vlink="#000" alink="#000">
+<div class="gridContainer clearfix"></div>
+<div id="Header">
+  <div id="Header_Name_Left">Xonshiz</div>
+  <div id="Profile"><a href="#aboutMe">About</a></div>
+  <div id="Profile"><a href="#myProjects">Projects</a></div>
+  <div id="Profile"><a href="#contactMe">Contact</a></div>
+</div>
+<script type="text/javascript">
+	var ypos,image;
+	function parallex() {
+		ypos = window.pageYOffset;
+		image = document.getElementById('Name_Section')
+		image.style.top = ypos * .4 + 'px';
+	}
+	window.addEventListener('scroll',parallex)
+</script>
+<div id="Name_Section" align="center">
+  <p><a href="" data-hover="Xonshiz">DHRUV KANOJIA</a></p>
+</div>
+<div id="Education">
+<div align="center">
+    <p id="aboutMe"><strong>About</strong></p>
+    <p>A college student, programmer, music lover and a foodie!</p>
+    <p><HR width="50%"></p>
+    <div id="Profile_Pic" align="left" style="float:left;margin-left:25%;overflow:auto;width:20%;">
+		<img name="Pro_Pic" src="Images/profile.png" width="256" height="256" alt="">
+	</div>
+    <div id="Profile_Pic" align="left" style="float:left;padding-left:2%;">
+		<p>Name : Dhruv Kanojia</p>
+		<p>Age : 20 Years</p>
+		<p>Contact ID : xonshiz[at]psychoticelites[dot]com</p>
+		<p>Location : New Delhi, India</p>
+	</div>  
+</div>
+<div id="Profile_Pic" align="left" style="float:left;margin-left:25%;width:50%">
+    <p>&nbsp;</p>
+    <p>I am a student, currently pursuing my Bachelor of Technology (Computer Science) from Northern India Engineering College, New Delhi, India. I am a self taught website designer and a programmer. I enjoy learning about computers and technology, in general. How it is done, what can be done to make it better, all sort of things. I own a tech. blog (Psychotic Elites) and a YouTube channel for the same. I often create automation and web scrapping scripts, mostly in Python. You can check most of them on my Github profile. I am flexible and have no problem working in a team. It's always better to share and exchange new ideas. Always adds to a perception.</p>
+</div>
+</div>
+<div id="Projects">
+<!-- Insert Tables here! -->
+<div align="center">
+<p>&nbsp;</p><HR width="50%"></p>
+<CAPTION style="font-size:50px;">
+<p id="myProjects"><strong>My Projects</strong></p>
+<p><br>
+</p>
+<table width="50%" border="0" align="center">
+  <tr>
+    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/comic-dl" target="new">comic-dl</a><br></td>
+    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/Hulu-Subs-Downloader" target="new">Hulu Subtitle <br>
+      Downloader</a></td>
+    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/ReadComicOnline-Downloader" target="new">ReadComicOnline <br>
+      Downloader</a></td>
+  </tr>
+  <tr>
+  <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/SkipLagged-Pokemon-Notifier" target="new">Pokemon <br>
+      Notifier</a></td>
+    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/Cab-Management-System---SalesForce-Project" target="new">Cab Management <br>
+      System</a></td>
+    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/SolidFiles-Downloader" target="new">SolidFiles <br>
+      Downloader</a></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</div>
+<div id="Contact_Section" align="center">
+<p><HR width="50%"></p>
+<p id="contactMe"><strong>Contact Me</strong></p>
+<p><br>
+</p>
+<a href="https://plus.google.com/+DhruvKanojia" target="new">
+<div class="gPlus">
+  G+
+</div>
+</a> 
+<a href="https://github.com/Xonshiz" target="new">
+<div class="gPlus github">
+  GH
+</div>
+</a> 
+<a href="https://twitter.com/Xonshiz" target="new">
+<div class="gPlus twitter">
+  T
+</div>
+</a>
+<a href="https://in.linkedin.com/in/dhruvkanojia" target="new">
+<div class="gPlus linkdIn">
+  Li
+</div>
+</a> 
+<a href="https://www.youtube.com/PsychoticElites" target="new">
+<div class="gPlus youTube">
+  YT
+</div>
+</a> 
+<br>
+<br>
+&nbsp;
+&nbsp;
+<p><br>
+</p>
+<div id="footer">
+Website developed and designed by Xonshiz.Check the source code on <a href="https://github.com/Xonshiz/Xonshiz.github.io" target="new">Github</a>. </div>
+<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+</div>
 
-<body id="page-top" class="index">
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Xonshiz | Github</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">My Projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="" style="border-radius: 100%;">
-                    <div class="intro-text">
-                        <span class="name">Xonshiz</span>
-                        <hr class="star-light">
-                        <span class="skills">Programmer | Wordpress Designer | Wanabe Hacker |<br> YouTube Content Creator | Blogger | Otaku | Student</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>My Projects</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>I am Xonshiz a.k.a Dhruv Kanojia, a 3rd Year computer Science pursuing my B.Tech degree. I own <a href="http://www.psychoticelites.com"><font color="9932CC">Psychotic Elites</font></a>, which I started back in 2012 and rebooted it in 2014. Currently, I blog on my weblog as a hobby.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>I'm a lazy person who loves to automate everything, and hence, I have written little scripts to automate almost everything I do every day on my system.</p>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <center><h4>Xonshiz[at]psychoticelites[dot]com</h4></center>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Somewhere on Internet
-                           <!-- <br>Beverly Hills, CA 90210 --></p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://plus.google.com/+DhruvKanojia" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/Xonshiz" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://in.linkedin.com/in/dhruvkanojia" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://psychoticelites.com" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer (Theme)</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Xonshiz 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Read Comic Online Downloader</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.jpg" class="img-responsive img-centered" alt="">
-                            <p>ReadComic Online Downloader is a command line tool to download comics from <a href="http://readcomiconline.to">http://readcomiconline.to</a></p>
-                            <ul class="list-inline item-details">
-                                <li>Code:
-                                    <strong><a href="https://github.com/Xonshiz/ReadComicOnline-Downloader">Github Repository</a>
-                                    </strong>
-                                </li>
-                                <li>Documentation:
-                                    <strong><a href="https://github.com/Xonshiz/ReadComicOnline-Downloader/blob/master/README.md">Read Me</a>
-                                    </strong>
-                                </li>
-                                <li>Windows Binary:
-                                    <strong><a href="https://github.com/Xonshiz/ReadComicOnline-Downloader#windows-binary">Download Here</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Hulu Subtitle Downloader</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.jpg" class="img-responsive img-centered" alt="">
-                            <p>Hulu Subtitle/Subs Downloader is a little python script that automates the process of downloading subtitles from Hulu.com.The script will download .srt format subtitles, which are compatible with most (if not all) video players.</p>
-                            <ul class="list-inline item-details">
-                                <li>Code:
-                                    <strong><a href="https://github.com/Xonshiz/Hulu-Subs-Downloader">Github Repository</a>
-                                    </strong>
-                                </li>
-                                <li>Documentation:
-                                    <strong><a href="https://github.com/Xonshiz/Hulu-Subs-Downloader/blob/master/ReadMe.md">Read Me</a>
-                                    </strong>
-                                </li>
-                                <li>Windows Binary:
-                                    <strong><a href="https://github.com/Xonshiz/Hulu-Subs-Downloader#windows-binary-exe-file">Download Here</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>SolidFiles Downloader</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.jpg" class="img-responsive img-centered" alt="">
-                            <p>This little python script downloads the content from solidfiles. The reason I came up with this is 'SolidFiles using too much Pop Ups'. Just copy and paste the SolidFile's link in this script, and wait till it downloads.</p>
-                            <ul class="list-inline item-details">
-                                <li>Code:
-                                    <strong><a href="https://github.com/Xonshiz/SolidFiles-Downloader">Github Repository</a>
-                                    </strong>
-                                </li>
-                                <li>Documentation:
-                                    <strong><a href="https://github.com/Xonshiz/SolidFiles-Downloader/blob/master/ReadMe.md">Read Me</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>AnimeTosho Batch Downloader</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.jpg" class="img-responsive img-centered" alt="">
-                            <p>It's a little Command Line Tool that automates the work of downloading batch uploads on <a href="http://animetosho.org" target="new_window">animetosho.org</a>.</p>
-                            <ul class="list-inline item-details">
-                                <li>Code:
-                                    <strong><a href="https://github.com/Xonshiz/AnimeTosho-Batch-Downloader">Github Repository</a>
-                                    </strong>
-                                </li>
-                                <li>Documentation:
-                                    <strong><a href="https://github.com/Xonshiz/AnimeTosho-Batch-Downloader/blob/master/ReadMe.md">Read Me</a>
-                                    </strong>
-                                </li>
-                                <li>Windows Binary:
-                                    <strong><a href="https://github.com/Xonshiz/AnimeTosho-Batch-Downloader#windows-binary">Download Here</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>SkipLagged-Pokemon-Notifier</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.jpg" class="img-responsive img-centered" alt="">
-                            <p>Another little poorly written python script which looks up on <a href="http://skiplagged.com/pokemon" target="new_window">skiplagged.com/pokemon</a> and notifies you when it find the pokemon you're looking for!</p>
-                            <ul class="list-inline item-details">
-                                <li>Code:
-                                    <strong><a href="https://github.com/Xonshiz/SkipLagged-Pokemon-Notifier">Github Repository</a>
-                                    </strong>
-                                </li>
-                                <li>Documentation:
-                                    <strong><a href="https://github.com/Xonshiz/SkipLagged-Pokemon-Notifier/blob/master/ReadMe.md">Read Me</a>
-                                    </strong>
-                                </li>
-                                <li>Windows Binary:
-                                    <strong><a href="https://github.com/Xonshiz/SkipLagged-Pokemon-Notifier#windows-binary">Download Here</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Cab Management System {SalesForce}</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>This is a very basic Cab Management System made for SalesForce Platform as our Summer Training Project. We developed it within 1 week, while learning SalesForce side by side, so it's not going to be the BEST logic or cleanest work/project you've ever seen. This project was developed with the mindset of "Using SalesForce without letting the users know about it". What does that even mean? We wanted to create a website where users can book a cab, get the cab assigned and then get the bills on their registered E-Mail IDs.All this on SalesForce platform, but the user won't see anything related to SalesForce. They should simply see the website, do their work and be done with it. That's it.</p>
-                            <ul class="list-inline item-details">
-                                <li>Code:
-                                    <strong><a href="https://github.com/Xonshiz/Cab-Management-System---SalesForce-Project">Github Repository</a>
-                                    </strong>
-                                </li>
-                                <li>Documentation:
-                                    <strong><a href="https://github.com/Xonshiz/Cab-Management-System---SalesForce-Project/blob/master/ReadMe.md">Read Me</a>
-                                    </strong>
-                                </li>
-                                <li>Meet:
-                                    <strong><a href="https://github.com/Xonshiz/Cab-Management-System---SalesForce-Project#the-team">The Team</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
 
 </body>
-
 </html>

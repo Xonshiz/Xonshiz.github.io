@@ -1,0 +1,577 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Name_Section {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Education {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Projects {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Contact_Section {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+}
+#Header_Name_Left {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#Profile_Link {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#Right_Menu_Section {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Profile {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#Right_Side_Options {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#Right_Side_Option {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#Education2 {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#Projects2 {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#Contact_Me {
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 100%;
+	display: block;
+}
+#About_Left {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#About_Centre {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#About_Right {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#About_Lil {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Name_Section {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Education {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Projects {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Contact_Section {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Header_Name_Left {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#Profile_Link {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#Right_Menu_Section {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Profile {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#Right_Side_Options {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#Right_Side_Option {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#Education2 {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#Projects2 {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#Contact_Me {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#About_Left {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#About_Centre {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#About_Right {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#About_Lil {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+/*	background-color: #2c3e50;*/
+	background-color: #000;
+	color: #FFF;
+}
+#Header a:link{
+	color: #FFF;
+	text-decoration:none;
+}
+#Header a:active{
+	color: #FFF;
+	text-decoration:none;
+}
+#Header a:visited{
+	color: #FFF;
+	text-decoration:none;
+}
+
+
+#Profile_Link {
+	clear: both;
+	float: left;
+	margin-left: 93.2203%;
+	width: 100%;
+	display: block;
+}
+
+#Profile {
+	clear: none;
+	float: left;
+	text-align:center !important;
+	margin-left: 1.6949%;
+	margin-top: 1%;
+	width: 12%;
+	display: block;
+	font-size: 45px;
+	
+}
+
+#Profile:hover {
+/*	background: #c8c8c8; */
+	text-decoration:overline;
+}
+/*
+#Right_Side_Options {
+	clear: none;
+	float: left;
+	text-align:center !important;
+	padding-right:0px !important;
+	padding-bottom:2%;
+	margin-left: 27.1186%;
+	width: 66.1016%;
+}
+*/
+#Name_Section {
+	clear: both;
+	float: left;
+	color: #FFF;
+	margin-left: 0;
+	width: 100%;
+	font-size: 120px;
+	margin-top:10%;
+	margin-bottom:15%;
+	display: block;
+	position:relative;
+	z-index:-1 !important;
+}
+Name_Section a:link{
+	color: #FFF !important;
+}
+Name_Section a:visited{
+	color: #FFF !important;
+}
+Name_Section a:active{
+	color: #FFF !important;
+}
+#Name_Section a:hover {
+	font-size: 0;
+	color: #FFF;
+}
+#Name_Section a:hover:before {
+	font-size: 120px;
+	content: attr(data-hover);
+}
+
+#Education {
+	clear: both;
+	float: left;
+	color: #FFFFFF;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #000;
+	position:relative;
+	z-index:1 !important;
+}
+#Education a:link{
+	color: #FFF;
+	text-decoration:none;
+}
+#Education a:active{
+	color: #FFF;
+	text-decoration:none;
+}
+#Education a:visited{
+	color: #FFF;
+	text-decoration:none;
+}
+#Projects {
+	clear: both;
+	float: left;
+	color: #FFFFFF;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:center;
+	background-color: #000;
+	position:relative;
+	z-index:2 !important;
+}
+#Contact_Section {
+	clear: both;
+	float: left;
+	color: #FFFFFF;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #000;
+	position:relative;
+	z-index:3 !important;
+	text-decoration:none;
+}
+#Contact_Section a:link{
+	color:#FFF;
+	text-decoration:none;
+}
+
+td.Project_Table:hover{
+	background-color: #FFF;
+	color: #000;
+	text-decoration:none;
+	/*opacity:0.5;
+	filter: alpha(opacity=50);*/
+}
+
+td.Project_Table a:link{
+	color: #C33;
+	text-decoration:none;
+}
+td.Project_Table a:active{
+	color: #000 !important;
+	text-decoration:none;
+}
+td.Project_Table a:visited{
+	color: #C33 !important;
+	text-decoration:none;
+}
+.gPlus {
+  height: 100px;
+  width: 100px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #000;
+  border-style: solid;
+  border-width: 10px;
+  font-size:40px;
+}
+.gPlus a:link{
+	color: #FFF;
+	text-decoration:none;
+}
+.gPlus a:active{
+	color: #FFF;
+	text-decoration:none;
+}
+.gPlus a:visited{
+	color: #FFF;
+	text-decoration:none;
+}
+.gPlus:hover{
+	color:#dd4b39;
+	background-color:#FFF;
+}
+.github:hover{
+	color: #000;
+	background-color: #FFF;
+}
+.twitter:hover{
+	color: #00aced;
+}
+.linkdIn:hover{
+	color: #007bb6;
+}
+.youTube:hover{
+	color: #bb0000;
+}
+
+#footer{
+	alignment-adjust:central;
+	font-size:16px;
+	color:#FFF;
+	background-color:#000;
+}
+#footer a:link{
+	color:#c33;
+}
+#footer a:active{
+	color:#c33;
+}
+#footer a:visited{
+	color: #C33;
+}
+#footer a:hover{
+	color:#F06;
+	text-decoration:underline;
+}
+
+#Header_Name_Left {
+	clear: none;
+	float: left;
+	margin-left: 1.6949%;
+	width: 40.6779%;
+	display: block;
+	font-family: "Comic Sans MS", cursive;
+	text-decoration: blink;
+	color: #FFF;
+	font-size: 72px;
+	-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+	animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {text-shadow:5px 5px 10px #00FF00;}
+/* Standard syntax */
+@keyframes mymove {
+    50% {text-shadow:5px 5px 10px #00FF00;}
+}
