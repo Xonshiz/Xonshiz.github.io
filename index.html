@@ -1,166 +1,27 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
-<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="">
-<!--<![endif]-->
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dhruv Kanojia | Xonshiz</title>
-<link href="CSS/boilerplate.css" rel="stylesheet" type="text/css">
-<link href="CSS/responsive_main.css" rel="stylesheet" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type='text/javascript'>
-$(document).ready(function(){ 
-    $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
-});
-</script>
-<style type="text/css">
-body {
-	background-image: url(Images/bg.PNG);
-}
-</style>
-<!-- 
-To learn more about the conditional comments around the html tags at the top of the file:
-paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-
-Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
-* insert the link to your js here
-* remove the link below to the html5shiv
-* add the "no-js" class to the html tags at the top
-* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
--->
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="CSS/respond.min.js"></script>
+	<title></title>
 </head>
-<body link="#000" vlink="#000" alink="#000">
-<div class="gridContainer clearfix"></div>
-<div id="Header">
-  <div id="Header_Name_Left">Xonshiz</div>
-  <div id="Profile"><a href="#aboutMe">About</a></div>
-  <div id="Profile"><a href="#myProjects">Projects</a></div>
-  <div id="Profile"><a href="#contactMe">Contact</a></div>
-</div>
-<script type="text/javascript">
-	var ypos,image;
-	function parallex() {
-		ypos = window.pageYOffset;
-		image = document.getElementById('Name_Section')
-		image.style.top = ypos * .4 + 'px';
-	}
-	window.addEventListener('scroll',parallex)
-</script>
-<div id="Name_Section" align="center">
-  <p><a href="" data-hover="Xonshiz">DHRUV KANOJIA</a></p>
-</div>
-<div id="Education">
-<div align="center">
-    <p id="aboutMe"><strong>About</strong></p>
-    <p>A college student, programmer, music lover and a foodie!</p>
-    <p><HR width="50%"></p>
-    <div id="Profile_Pic" align="left" style="float:left;margin-left:25%;overflow:auto;width:20%;">
-		<img name="Pro_Pic" src="Images/profile.png" width="256" height="256" alt="">
-	</div>
-    <div id="Profile_Pic" align="left" style="float:left;padding-left:2%;">
-		<p>Name : Dhruv Kanojia</p>
-		<p>Age : 20 Years</p>
-		<p>Contact ID : xonshiz[at]psychoticelites[dot]com</p>
-		<p>Location : New Delhi, India</p>
-	</div>  
-</div>
-<div id="Profile_Pic" align="left" style="float:left;margin-left:25%;width:50%">
-    <p>&nbsp;</p>
-    <p>I am a student, currently pursuing my Bachelor of Technology (Computer Science) from Northern India Engineering College, New Delhi, India. I am a self taught website designer and a programmer. I enjoy learning about computers and technology, in general. How it is done, what can be done to make it better, all sort of things. I own a tech. blog (Psychotic Elites) and a YouTube channel for the same. I often create automation and web scrapping scripts, mostly in Python. You can check most of them on my Github profile. I am flexible and have no problem working in a team. It's always better to share and exchange new ideas. Always adds to a perception.</p>
-</div>
-</div>
-<div id="Projects">
-<!-- Insert Tables here! -->
-<div align="center">
-<p>&nbsp;</p><HR width="50%"></p>
-<CAPTION style="font-size:50px;">
-<p id="myProjects"><strong>My Projects</strong></p>
-<p><br>
-</p>
-<table width="50%" border="0" align="center">
-  <tr>
-    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/comic-dl" target="new">comic-dl</a><br></td>
-    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/Hulu-Subs-Downloader" target="new">Hulu Subtitle <br>
-      Downloader</a></td>
-    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/ReadComicOnline-Downloader" target="new">ReadComicOnline <br>
-      Downloader</a></td>
-  </tr>
-  <tr>
-  <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/SkipLagged-Pokemon-Notifier" target="new">Pokemon <br>
-      Notifier</a></td>
-    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/Cab-Management-System---SalesForce-Project" target="new">Cab Management <br>
-      System</a></td>
-    <td class="Project_Table" align="center"><a href="https://github.com/Xonshiz/SolidFiles-Downloader" target="new">SolidFiles <br>
-      Downloader</a></td>
-  </tr>
-</table>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-</div>
-<div id="Contact_Section" align="center">
-<p><HR width="50%"></p>
-<p id="contactMe"><strong>Contact Me</strong></p>
-<p><br>
-</p>
-<a href="https://plus.google.com/+DhruvKanojia" target="new">
-<div class="gPlus">
-  G+
-</div>
-</a> 
-<a href="https://github.com/Xonshiz" target="new">
-<div class="gPlus github">
-  GH
-</div>
-</a> 
-<a href="https://twitter.com/Xonshiz" target="new">
-<div class="gPlus twitter">
-  T
-</div>
-</a>
-<a href="https://in.linkedin.com/in/dhruvkanojia" target="new">
-<div class="gPlus linkdIn">
-  Li
-</div>
-</a> 
-<a href="https://www.youtube.com/PsychoticElites" target="new">
-<div class="gPlus youTube">
-  YT
-</div>
-</a> 
-<br>
-<br>
-&nbsp;
-&nbsp;
-<p><br>
-</p>
-<div id="footer">
-Website developed and designed by Xonshiz.Check the source code on <a href="https://github.com/Xonshiz/Xonshiz.github.io" target="new">Github</a>. </div>
-<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-</div>
+<body>
+<p style="text-align:center;display:block;"><img src="http://xonshiz.heliohost.org/welcome.jpg" style="vertical-align: text-top;" /></p>
 
+<hr width="50%" />
+<h1 style="text-align:center">Under Construction - Forever</h1>
 
+<p style="text-align: center;"><strong>Meanwhile, you can <s>stalk </s>FIND me here : </strong></p>
 
+<p style="text-align: center;"><strong>Github : <a href="https://github.com/Xonshiz" target="_blank">@Xonshiz</a></strong></p>
+
+<p style="text-align: center;"><strong>LinkedIn : <a href="https://in.linkedin.com/in/dhruvkanojia" target="_blank">@Xonshiz</a></strong></p>
+
+<p style="text-align: center;"><strong>Twitter : <a href="https://twitter.com/Xonshiz" target="_blank">@Xonshiz</a></strong></p>
+
+<p style="text-align: center;"><strong>Facebook : <a href="https://www.facebook.com/kanojia.Dhruv" target="_blank">@Xonshiz</a></strong></p>
+
+<p style="text-align: center;"><strong>Google+ : </strong><a href="https://plus.google.com/+DhruvKanojia" target="_blank"><strong>@Xonshiz</strong></a></p>
+
+<p style="text-align: center;"><strong>Email : kanojia24.10 [@] gmail [.] com</strong></p>
+
+<p></p>
 </body>
 </html>
